@@ -1,0 +1,430 @@
+body {
+  font: 100%/1.6 Lato,Helvetica,Arial,sans-serif;
+  margin: 0;
+  letter-spacing: 2px;
+  background-color: #fdfdfd;
+}
+
+div {
+  display: block;
+}
+
+img{
+  margin-right: 120px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+ul {
+  background: black;
+  padding-top: 5px;
+  float: left;
+  padding-right: 2%;
+}
+
+li {
+  display: block;
+  float: left;
+}
+
+li a {
+    display: block;
+    text-decoration-color: white;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+}
+
+h1{
+  padding: 13px 15px 8px;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+
+a, p {
+  padding: 13px 15px 8px;
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+
+}
+
+li a:hover {
+  color: grey;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+li ul
+{
+    display: none;
+    transition: all 0.5s ease;
+
+}
+
+li:hover ul {
+    margin-top: 0;
+    display: block;
+    position: fixed;
+    transition: all 0.5s ease;
+}
+
+li:hover li {
+    float: none;
+    font-size: 11px;
+}
+
+.logo {
+  opacity: 0;
+  margin-top: 35px;
+  margin-left: 45px;
+  float: left;
+  animation: img-slide.5s linear both;
+  
+  animation-delay: 0.5s;
+}
+
+@keyframes img-slide {
+  0% {
+    transform:translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform:translateX(0px);
+    opacity:1;
+    }
+  }
+
+#check{
+  display: none;
+}
+#menuToggle {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 12%;
+  background: black;
+  z-index: 1;
+
+
+}
+.columnss{
+  margin-right: 3%;
+  margin-left: 59%;
+  margin-top: -452px;
+  }
+
+
+.background {
+min-height: 600px;
+height: calc(100vh);
+/*  background-image: url("Image/background.png");*/
+
+}
+
+.background-dark{
+background-color: rgba(0, 0, 0, 0.4);
+height: 100%;
+}
+
+.vertical-center {
+  text-align: center;
+  padding-top: 300px;
+}
+
+.text-main {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+
+}
+
+.text-main-quote {
+  color: white;
+  font-size: 20px;
+
+}
+
+.animation-scale {
+  animation: scale 3.8s both;
+  animation-iteration-count: infinite;
+  animation-delay: 0.2s;
+
+}
+
+@keyframes scale {
+  from {
+    opacity: 0;
+    transform: translate(50px, -80px) scale(1, 1);
+    }
+
+ /*   25% {
+      transform: translate(20px, 0px) scale(1, 0.9);
+
+    }*/
+
+    50% {
+      transform: translate(10px, -30px) scale(1, 1);
+
+    }
+
+ /*   75% {
+      transform: translate(0px, 5px) scale(1, 0.95);
+
+    }*/
+
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px) scale(1, 1);
+
+    }
+
+}
+
+.footer {
+height: 100px;
+background-color: #151515;
+text-align: center;
+
+}
+.rowss{
+  border: 4px double black;
+  height: 150px;
+}
+.collll{
+  margin-left: 20%;
+  margin-top: -20%
+}
+
+.footer p {
+  padding-top: 40px;
+  color: white;
+ /* text-justify:  inter-word;*/
+}
+
+.main-content a, p {
+color: black;
+}
+
+
+.about-group {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.best-album {
+  margin-left: 100px;
+  margin-right: 100px;
+  /* display: inline-block; */
+
+}
+
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #800080;
+  color: white;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+
+
+.nav ul {
+  display: none;
+}
+.nav {
+  display: none;
+}
+a
+{
+  text-decoration: none;
+  color: white;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: tomato;
+}
+
+#menuToggle
+{
+  position: fixed;
+  top: 0;
+  right: 0px;
+  width: 100%;
+  height: 12%;
+  background: black;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: black;
+   transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+}
+
+.example_b {
+color: #fff;
+float: center;
+display: inline-flex; /* keep the inline nature of buttons */
+align-items: flex-start;
+height: 40px;
+width:130px;
+text-transform: uppercase;
+text-decoration: none;
+background: #60a3bc;
+padding: 20px 23px;
+border-radius: 50px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+}
+
+.example_b:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+.btn {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+.btn:hover { background: rgb(53, 167, 110); }
+.btn:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
